@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32"
+      href="./images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/styles/stylesheet.css">
+
+  </head>
+
+  <body>
+
+
+
+
+    <header class="">
+
+
+      <img src="/images/icon-menu.svg" alt="" class="menu-icon" id="menuIcon">
+      <h1 class="header__title">sneakers</h1>
+
+
+      <nav class="nav-bar nav-bar--hidden" id="navBar">
+
+        <img src="/images/icon-close.svg" alt="" class="close-icon"
+          id="closeIcon">
+        <a href="" class="nav-bar__item">Collections</a>
+        <a href="" class="nav-bar__item">Men </a>
+        <a href="" class="nav-bar__item">Women</a>
+        <a href="" class="nav-bar__item"> About</a>
+        <a href="" class="nav-bar__item">Contact</a>
+      </nav>
+
+
+
+
+      <div><img src="/images/icon-cart.svg" alt="" class="cart-icon"
+          id="cartIcon">
+
+        <img src="/images/image-avatar.png" class="avatar-img" alt="">
+      </div>
+
+
+    </header>
+
+    <div class="cart-box cart-box--hidden" id="Cart">
+
+      <section id="cartIsEmpty" class="cart-box__empty ">
+        <h3 class="cart-box__empty__title">Cart</h3>
+        <div class="cart-box__empty__subtitle">Your cart is empty</div>
+      </section>
+      <section id="cartWithProducts"
+
+        class="cart-box__with-products cart-box--hidden">
+        <!-- 1 -->
+
+        <span class="cart-box__with-products__header">Cart</span>
+
+        <!-- 2 -->
+
+
+        <div class="cart-box__with-products__middle-section">
+
+          <img src="/images/image-product-1-thumbnail.jpg" alt=""
+            class="cart-box__with-products__image">
+
+
+          <div class="cart-box-with-products__info-section">
+
+            <span class="cart-box__with-products__title"> Autumn Limited Edition</span>
+            <span class="cart-box__with-products__price">$125.00</span>
+
+            <span id="" class="cart-box__with-products__quantity">
+            </span>
+
+            <span class="cart-box__with-products__total">
+            </span>
+          </div>
+
+          <img src="/images/icon-delete.svg" alt="" class="delete-icon">
+
+        </div>
+        <!-- 3 -->
+
+
+        <button class=" cart-button cart-button--checkout ">CHECKOUT</button>
+      </section>
+
+
+    </div>
+
+    <main class="e-commerce-section">
+
+
+
+
+
+      <section class="image-visor">
+        <div class="image-visor-arrows-container">
+          <img src="/images/image-product-1.jpg"
+            alt="image-product-1-thumbnail"
+            class="image-visor__actual-image"
+            id="actualImage">
+
+          <img src="/images/icon-previous.svg" alt="left arrow"
+            class="image-visor__arrow image-visor__arrow--previous"
+            id="leftArrow">
+          <img src="/images/icon-next.svg" alt="right arrow"
+            class="image-visor__arrow image-visor__arrow--next"
+            id="rightArrow">
+        </div>
+
+        <div class="image-visor__thumbnails" id="imageVisorThumbnails">
+
+          <img src="/images/image-product-1-thumbnail.jpg" alt=""
+            class="is-active" id="visorThumbnail" data-position="1">
+          <img src="/images/image-product-2-thumbnail.jpg" alt=""
+            id="visorThumbnail" data-position="2">
+          <img src="/images/image-product-3-thumbnail.jpg" alt=""
+            id="visorThumbnail" data-position="3">
+          <img src="/images/image-product-4-thumbnail.jpg" alt=""
+            id="visorThumbnail" data-position="4">
+        </div>
+
+
+      </section>
+      <div class="right-section-desktop">
+        <section class="product-info">
+
+          <span class="product-info__subtitle">SNEAKER COMPANY</span>
+
+          <h2 class="product-info__title">Fall Limited Edition <br>
+            Sneakers</h2>
+          <p class="product-info__description">These low-profile sneakers are
+            your perfect <br> casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the
+            weather can offer.</p>
+
+        </section>
+
+        <section class="price-section">
+          <span class="price-section__actual-price"> $125.00</span>
+          <span class="price-section__discount">50%</span>
+          <span class="price-section__previous-price">
+            $250.00
+          </span>
+
+
+
+
+
+        </section>
+
+        <div class="quantity-and-button-container">
+
+          <section class="quantity-section">
+            <img src="/images/icon-minus.svg" alt=""
+              class="quantity-section__minus-icon" id="minusIcon">
+            <div class="quantity-selector" id="Quantity">
+              0
+            </div>
+            <img src="/images/icon-plus.svg" alt=""
+              class="quantity-section__plus-icon" id="plusIcon">
+
+
+          </section>
+
+          <button class="cart-button" id="cartButton">
+            <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717
+                0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726
+                1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87
+                2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0
+                0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681
+                0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0
+                .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358
+                18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015
+                0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0
+                1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                fill="#69707D" fill-rule="nonzero" />
+              </svg>
+              Add to cart</button>
+          </div>
+
+
+        </div>
+
+
+
+      </main>
+
+      <!--  LIGHTBOX BACKGROUND -->
+      <div class="light-box__background--low-opacity hidden"
+        id="lightBoxBackground">
+      </div>
+      <!--  LIGHTBOX  -->
+      <article class="light-box hidden" id="lightBox">
+        <div class="light-box__container ">
+
+          <img src="/images/icon-close.svg" alt="" class="
+         
+            light-box__close-icon" id="lightBoxCloseIcon">
+
+          <img src="/images/image-product-1.jpg"
+            alt="image-product-1-thumbnail"
+            class="light-box__actual-image" id="lightBoxActualImage">
+
+          <img src="/images/icon-previous.svg" alt="left arrow"
+            class="image-visor__arrow image-visor__arrow--previous
+            light-box__arrow--previous
+            "
+            id="lightBoxLeftArrow">
+          <img src="/images/icon-next.svg" alt="right arrow"
+            class="image-visor__arrow image-visor__arrow--next
+            light-box__arrow--next
+            "
+            id="lightBoxRightArrow">
+        </div>
+
+        <div class="image-visor__thumbnails light-box__thumbnails" id="lightBoxThumbnails">
+
+          <img src="/images/image-product-1-thumbnail.jpg" alt="" id="lightBoxThumbnail">
+          <img src="/images/image-product-2-thumbnail.jpg" alt="" id="lightBoxThumbnail">
+          <img src="/images/image-product-3-thumbnail.jpg" alt="" id="lightBoxThumbnail">
+          <img src="/images/image-product-4-thumbnail.jpg" alt="" id="lightBoxThumbnail">
+        </div>
+
+      </article>
+
+
+
+
+
+
+      <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">PABLO</a>. -->
+      <!-- </div> -->
+
+      <script src="/assets/scripts/script.js"></script>
+    </body>
+
+  </html>
