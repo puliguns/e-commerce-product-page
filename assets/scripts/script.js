@@ -1,10 +1,10 @@
-const d = document;
-const $menuIcon = d.getElementById("menuIcon");
+const d = document,
+  $menuIcon = d.getElementById("menuIcon");
 
 // carrusel de fotos
-const $actualImage = d.getElementById("actualImage");
-const $leftArrow = d.getElementById("leftArrow");
-const $rightArrow = d.getElementById("rightArrow");
+const $actualImage = d.getElementById("actualImage"),
+  $leftArrow = d.getElementById("leftArrow"),
+  $rightArrow = d.getElementById("rightArrow");
 
 let imagesArray = [
   "image-product-1.jpg",
@@ -17,21 +17,20 @@ let imgIterator = 0;
 
 const $imageVisorThumbnails = d.getElementById("imageVisorThumbnails");
 //
-const $cartIcon = d.getElementById("cartIcon");
-const $navBar = d.getElementById("navBar");
-const $Cart = d.getElementById("Cart");
-const $QuantityVisor = d.getElementById("Quantity");
+const $cartIcon = d.getElementById("cartIcon"),
+  $navBar = d.getElementById("navBar"),
+  $Cart = d.getElementById("Cart"),
+  $QuantityVisor = d.getElementById("Quantity");
 
 let Quantity = 0;
 let cartQuantity = 0;
 
 // LIGHTBOX
-const $lightBox = d.getElementById("lightBox");
-const $lightBoxBackground = d.getElementById("lightBoxBackground");
-const $lightBoxActualImage = d.getElementById("lightBoxActualImage");
-const $lightBoxThumbnails = d.getElementById("lightBoxThumbnails");
-let lightBoxImgIterator = 0;
-let lightBoxActive = false;
+const $lightBox = d.getElementById("lightBox"),
+$lightBoxBackground = d.getElementById("lightBoxBackground"),
+$lightBoxThumbnails = d.getElementById("lightBoxThumbnails"),
+ lightBoxImgIterator = 0;
+ lightBoxActive = false;
 
 const thumbnailSelection = () => {
   for (el in Array.from($imageVisorThumbnails.children)) {
